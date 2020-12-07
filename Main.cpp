@@ -12,9 +12,9 @@ int APIENTRY WinMain( HINSTANCE hInst, HINSTANCE hPrev, LPSTR lpCmdLine, int nCm
 
         int msgboxID = MessageBox(NULL, "Welcome to the Gay Meter!\nThis program will measure your gayness. \nAre you ready to roll?", "The Gay Meter", MB_ICONASTERISK | MB_YESNO);
 
-        srand (time(NULL));
+        srand (time(NULL)); //This is a seed randomizer.
 
-        int percentID = rand() % 100 + 1;
+        int percentID = rand() % 100 + 1; //The major thing.
 
         switch (msgboxID){
             case IDYES:
